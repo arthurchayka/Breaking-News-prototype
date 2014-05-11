@@ -287,16 +287,16 @@
 					"path": "images/leftGreen.png",
 					"frame": {
 						"x": 60,
-						"y": 283,
+						"y": 198,
 						"width": 711,
-						"height": 1205
+						"height": 1291
 					}
 				},
 				"imageType": "png",
 				"children": [
 					
 				],
-				"modification": "286928134"
+				"modification": "984214917"
 			},
 			{
 				"id": 313,
@@ -761,6 +761,6 @@
 				"modification": "316205619"
 			}
 		],
-		"modification": "222490479"
+		"modification": "348640800"
 	}
 ]

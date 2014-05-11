@@ -12,7 +12,7 @@ noBounceCurveSpeed = "250";
 	PSD["CONTENT"].y = -570
 
 
-	PSD["logo"].opacity = 0
+
 
 
 start = function() {
@@ -31,14 +31,14 @@ start = function() {
 })
 
 	// Rotate the logo
-	utils.delay(1500 * 1.3, function() {
+	utils.delay(1500 * 2, function() {
 		PSD["logo"].animate({
 			properties: {rotationY:720},
 			curve: "spring(100,30,0)"
 	})
 })
 	// Shake the logo
-	utils.delay(1500 * 2.3, function() {
+	utils.delay(1500 * 3, function() {
 		oldX = PSD["logo"].x
 		PSD["logo"].x -= 100
 		PSD["logo"].animate({
