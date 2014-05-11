@@ -52,8 +52,7 @@ utils.delay(100, start)
 
 
 
-
-PSD["breakingNewss"].opacity = 0
+PSD["smallBreakingNews"].opacity = 0
 
 // Animate to Now View
 gotoNow = function() {
@@ -68,7 +67,7 @@ gotoNow = function() {
 		
 	});
 
-	PSD["breakingNewss"].animate({
+	PSD["smallBreakingNews"].animate({
 		properties: {
 			y: 415,
 			scale: 1,
@@ -167,7 +166,7 @@ goHome = function() {
 		curve: animateOutCurve
 	});
 
-	PSD["breakingNewss"].animate({
+	PSD["smallBreakingNews"].animate({
 		properties: {
 			y: 815,
 			scale: 1,
@@ -263,7 +262,7 @@ goHome();
 
 pointerType = "click";
 toggler = utils.toggle(gotoNow, goHome);
-PSD["mockup"].on(pointerType, function(e) {
+PSD["reflect"].on(pointerType, function(e) {
 	var movePage;
 	e.preventDefault();
 	movePage = toggler();
@@ -282,6 +281,7 @@ PSD["breakingNewss"].on(pointerType, function(a) {
 
 */
 
+//leftside
    PSD["leftsidetrigger"].animate({
 		properties: {x:0},
 		curve: animationCurve
@@ -290,14 +290,14 @@ PSD["breakingNewss"].on(pointerType, function(a) {
 
 PSD["leftButton"].on(pointerType, function() {
    PSD["leftSide"].animate({
-		properties: {x:800},
+		properties: {x:760},
 		curve: animationCurve
 	})
    PSD["leftsidetrigger"].animate({
-		properties: {x:1310},
+		properties: {x:1270},
 		curve: animationCurve
 	})
-        PSD["breakingNewss"].animate({
+        PSD["smallBreakingNews"].animate({
 			properties: {
 			opacity: 0,
 			x: 1500
@@ -305,6 +305,107 @@ PSD["leftButton"].on(pointerType, function() {
 	curve: "spring(1000,100,800)"
 	});
 
+       PSD["leftButton"].animate({
+			properties: {
+			opacity: 0,
+			x: 1500
+		},
+	curve: "spring(1000,100,800)"
+	});
+});
+
+//goig back
+PSD["leftsidetrigger"].on(pointerType, function() {
+   PSD["leftSide"].animate({
+		properties: {x:100},
+		curve: animationCurve
+	})
+      PSD["leftsidetrigger"].animate({
+		properties: {x:150},
+		curve: animationCurve
+	})
+
+ PSD["leftButton"].animate({
+			properties: {
+			opacity: 1,
+			x:860
+		},
+	curve: "spring(1200,100,800)"
+	});
+PSD["smallBreakingNews"].animate({
+			properties: {
+			opacity: 1,
+			x:980,
+			y:415
+					},
+	curve: "spring(1200,100,800)"
+	});
+});
+
+//rightside
+
+   PSD["rightsidetrigger"].animate({
+		properties: {x:1500},
+		curve: animationCurve
+	})
+
+PSD["rightButton"].on(pointerType, function() {
+   PSD["rightSide"].animate({
+		properties: {x:1020},
+		opacity: 0,
+		curve: animationCurve
+	})
+   PSD["rightsidetrigger"].animate({
+		properties: {x:800},
+		opacity: 0,
+		curve: animationCurve
+	})
+        PSD["smallBreakingNews"].animate({
+			properties: {
+			opacity: 0,
+			x: 650
+			},
+	curve: "spring(1000,100,800)"
+	});
+        PSD["rightButton"].animate({
+			properties: {
+			opacity: 0,
+			x: 650
+		},
+		curve: "spring(1000,100,800)"
+	});
+});
+
+//going back 
+
+PSD["rightsidetrigger"].on(pointerType, function() {
+   PSD["rightSide"].animate({
+		properties: {x:1500},
+		curve: animationCurve
+	})
+      PSD["rightsidetrigger"].animate({
+		properties: {x:1500},
+		curve: animationCurve
+	})
+
+ PSD["rightButton"].animate({
+			properties: {
+			opacity: 1,
+			x:1370
+		},
+	curve: "spring(1200,100,800)"
+	});
+PSD["smallBreakingNews"].animate({
+			properties: {
+			opacity: 1,
+			x:980,
+			y:415
+					},
+	curve: "spring(1200,100,800)"
+	});
+});
+
+/*
        PSD["leftButton"].animate({
 			properties: {
 			opacity: 0,
@@ -338,9 +439,13 @@ PSD["breakingNewss"].animate({
 			x:980,
 			y:415
 					},
+
 	curve: "spring(1200,100,800)"
 	});
-});
+}); */
+
+
+PSD["mockup"].style.overflow = "hidden";
 /*
        if(goHome){
       	PSD["breakingNewss"].animate({

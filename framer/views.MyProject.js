@@ -14,6 +14,56 @@
 		"imageType": null,
 		"children": [
 			{
+				"id": 357,
+				"name": "left cover",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 2284,
+					"height": 2823
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/left cover.png",
+					"frame": {
+						"x": 543,
+						"y": 335,
+						"width": 279,
+						"height": 356
+					}
+				},
+				"imageType": "png",
+				"children": [
+					
+				],
+				"modification": "195329113"
+			},
+			{
+				"id": 354,
+				"name": "right cover",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 2284,
+					"height": 2823
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/right cover.png",
+					"frame": {
+						"x": 1462,
+						"y": 307,
+						"width": 324,
+						"height": 363
+					}
+				},
+				"imageType": "png",
+				"children": [
+					
+				],
+				"modification": "929967431"
+			},
+			{
 				"id": 322,
 				"name": "leftsidetrigger",
 				"layerFrame": {
@@ -41,11 +91,41 @@
 				"children": [
 					
 				],
-				"modification": "890231583"
+				"modification": "2005696475"
+			},
+			{
+				"id": 325,
+				"name": "rightsidetrigger",
+				"layerFrame": {
+					"x": 830,
+					"y": 326,
+					"width": 633,
+					"height": 1138
+				},
+				"maskFrame": {
+					"x": 830,
+					"y": 327,
+					"width": 633,
+					"height": 1137
+				},
+				"image": {
+					"path": "images/rightsidetrigger.png",
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"width": 2284,
+						"height": 2823
+					}
+				},
+				"imageType": "png",
+				"children": [
+					
+				],
+				"modification": "1780686480"
 			},
 			{
 				"id": 331,
-				"name": "breakingNewss",
+				"name": "smallBreakingNews",
 				"layerFrame": {
 					"x": 0,
 					"y": 0,
@@ -54,7 +134,7 @@
 				},
 				"maskFrame": null,
 				"image": {
-					"path": "images/breakingNewss.png",
+					"path": "images/smallBreakingNews.png",
 					"frame": {
 						"x": 979,
 						"y": 1135,
@@ -144,6 +224,31 @@
 				"modification": "1218540091"
 			},
 			{
+				"id": 318,
+				"name": "reflect",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 2284,
+					"height": 2823
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/reflect.png",
+					"frame": {
+						"x": 824,
+						"y": 335,
+						"width": 640,
+						"height": 1129
+					}
+				},
+				"imageType": "png",
+				"children": [
+					
+				],
+				"modification": "1234747368"
+			},
+			{
 				"id": 156,
 				"name": "mockup",
 				"layerFrame": {
@@ -169,8 +274,8 @@
 				"modification": "1218540023"
 			},
 			{
-				"id": 318,
-				"name": "reflection",
+				"id": 361,
+				"name": "leftGreen",
 				"layerFrame": {
 					"x": 0,
 					"y": 0,
@@ -179,32 +284,7 @@
 				},
 				"maskFrame": null,
 				"image": {
-					"path": "images/reflection.png",
-					"frame": {
-						"x": 824,
-						"y": 335,
-						"width": 640,
-						"height": 1129
-					}
-				},
-				"imageType": "png",
-				"children": [
-					
-				],
-				"modification": "1218540029"
-			},
-			{
-				"id": 313,
-				"name": "sides",
-				"layerFrame": {
-					"x": 0,
-					"y": 0,
-					"width": 2284,
-					"height": 2823
-				},
-				"maskFrame": null,
-				"image": {
-					"path": "images/sides.png",
+					"path": "images/leftGreen.png",
 					"frame": {
 						"x": 60,
 						"y": 283,
@@ -216,7 +296,57 @@
 				"children": [
 					
 				],
-				"modification": "1323482758"
+				"modification": "286928134"
+			},
+			{
+				"id": 313,
+				"name": "rightGreen",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 2284,
+					"height": 2823
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/rightGreen.png",
+					"frame": {
+						"x": 1515,
+						"y": 307,
+						"width": 765,
+						"height": 1205
+					}
+				},
+				"imageType": "png",
+				"children": [
+					
+				],
+				"modification": "570990949"
+			},
+			{
+				"id": 301,
+				"name": "rightSide",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 2284,
+					"height": 2823
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/rightSide.png",
+					"frame": {
+						"x": 1760,
+						"y": 327,
+						"width": 520,
+						"height": 1161
+					}
+				},
+				"imageType": "png",
+				"children": [
+					
+				],
+				"modification": "1626637150"
 			},
 			{
 				"id": 297,
@@ -631,6 +761,6 @@
 				"modification": "316205619"
 			}
 		],
-		"modification": "397683290"
+		"modification": "222490479"
 	}
 ]
