@@ -13,42 +13,42 @@ noBounceCurveSpeed = "250";
 
 
 
-
+PSD.logo.opacity = 0
 
 start = function() {
 
-		PSD["logo"].animate({
-		properties: {opacity:0},
-		time: 800
+		PSD.logo.animate({
+		properties: {opacity:1},
+		time: 1000
 	})
 
-	utils.delay(1500, function() {
-		PSD["logo"].scale = 0.5
-		PSD["logo"].animate({
+	utils.delay(1000, function() {
+		PSD.logo.scale = .5
+		PSD.logo.animate({
 			properties: {opacity:1, scale:1},
 			curve: "spring(1500,30,2000)"
 	})
 })
 
 	// Rotate the logo
-	utils.delay(1500 * 2, function() {
-		PSD["logo"].animate({
+	utils.delay(2000, function() {
+		PSD.logo.animate({
 			properties: {rotationY:720},
 			curve: "spring(100,30,0)"
 	})
 })
 	// Shake the logo
-	utils.delay(1500 * 3, function() {
+	utils.delay(3000, function() {
 		oldX = PSD["logo"].x
-		PSD["logo"].x -= 100
-		PSD["logo"].animate({
+		PSD.logo.x -= 100
+		PSD.logo.animate({
 			properties: {x:oldX},
 			curve: "spring(600,6,500)"
 	})
 })
 };
 
-utils.delay(100, start)
+utils.delay(500, start)
 
 
 
@@ -282,11 +282,9 @@ PSD["breakingNewss"].on(pointerType, function(a) {
 */
 
 //leftside
-   PSD["leftsidetrigger"].animate({
-		properties: {x:0},
-		curve: animationCurve
-	})
+PSD["leftsidetrigger"].x = 0
 
+PSD["leftButton"].x = 860
 
 PSD["leftButton"].on(pointerType, function() {
    PSD["leftSide"].animate({
@@ -343,6 +341,8 @@ PSD["smallBreakingNews"].animate({
 });
 
 //rightside
+
+PSD["rightButton"].x = 1370 
 
    PSD["rightsidetrigger"].animate({
 		properties: {x:1500},
