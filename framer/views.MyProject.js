@@ -26,17 +26,17 @@
 				"image": {
 					"path": "images/left cover.png",
 					"frame": {
-						"x": 543,
-						"y": 335,
-						"width": 279,
-						"height": 356
+						"x": 607,
+						"y": 111,
+						"width": 226,
+						"height": 1584
 					}
 				},
 				"imageType": "png",
 				"children": [
 					
 				],
-				"modification": "195329113"
+				"modification": "477066332"
 			},
 			{
 				"id": 354,
@@ -51,17 +51,17 @@
 				"image": {
 					"path": "images/right cover.png",
 					"frame": {
-						"x": 1462,
-						"y": 307,
-						"width": 324,
-						"height": 363
+						"x": 1453,
+						"y": 111,
+						"width": 306,
+						"height": 1584
 					}
 				},
 				"imageType": "png",
 				"children": [
 					
 				],
-				"modification": "929967431"
+				"modification": "1926482971"
 			},
 			{
 				"id": 322,
@@ -174,6 +174,31 @@
 				"modification": "1218540147"
 			},
 			{
+				"id": 139,
+				"name": "rightButton",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 2284,
+					"height": 2823
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/rightButton.png",
+					"frame": {
+						"x": 1369,
+						"y": 404,
+						"width": 60,
+						"height": 60
+					}
+				},
+				"imageType": "png",
+				"children": [
+					
+				],
+				"modification": "1218540091"
+			},
+			{
 				"id": 56,
 				"name": "leftButton",
 				"layerFrame": {
@@ -199,8 +224,8 @@
 				"modification": "1218540119"
 			},
 			{
-				"id": 139,
-				"name": "rightButton",
+				"id": 313,
+				"name": "rightGreen",
 				"layerFrame": {
 					"x": 0,
 					"y": 0,
@@ -209,19 +234,94 @@
 				},
 				"maskFrame": null,
 				"image": {
-					"path": "images/rightButton.png",
+					"path": "images/rightGreen.png",
 					"frame": {
-						"x": 1369,
-						"y": 404,
-						"width": 60,
-						"height": 60
+						"x": 1515,
+						"y": 307,
+						"width": 765,
+						"height": 1205
 					}
 				},
 				"imageType": "png",
 				"children": [
 					
 				],
-				"modification": "1218540091"
+				"modification": "570990949"
+			},
+			{
+				"id": 301,
+				"name": "rightSide",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 2284,
+					"height": 2823
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/rightSide.png",
+					"frame": {
+						"x": 1760,
+						"y": 335,
+						"width": 520,
+						"height": 1127
+					}
+				},
+				"imageType": "png",
+				"children": [
+					
+				],
+				"modification": "2071957238"
+			},
+			{
+				"id": 361,
+				"name": "leftGreen",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 2284,
+					"height": 2823
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/leftGreen.png",
+					"frame": {
+						"x": 60,
+						"y": 198,
+						"width": 711,
+						"height": 1291
+					}
+				},
+				"imageType": "png",
+				"children": [
+					
+				],
+				"modification": "984214917"
+			},
+			{
+				"id": 297,
+				"name": "leftSide",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 2284,
+					"height": 2823
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/leftSide.png",
+					"frame": {
+						"x": 94,
+						"y": 335,
+						"width": 520,
+						"height": 1127
+					}
+				},
+				"imageType": "png",
+				"children": [
+					
+				],
+				"modification": "387083451"
 			},
 			{
 				"id": 318,
@@ -272,106 +372,6 @@
 					
 				],
 				"modification": "1218540023"
-			},
-			{
-				"id": 361,
-				"name": "leftGreen",
-				"layerFrame": {
-					"x": 0,
-					"y": 0,
-					"width": 2284,
-					"height": 2823
-				},
-				"maskFrame": null,
-				"image": {
-					"path": "images/leftGreen.png",
-					"frame": {
-						"x": 60,
-						"y": 198,
-						"width": 711,
-						"height": 1291
-					}
-				},
-				"imageType": "png",
-				"children": [
-					
-				],
-				"modification": "984214917"
-			},
-			{
-				"id": 313,
-				"name": "rightGreen",
-				"layerFrame": {
-					"x": 0,
-					"y": 0,
-					"width": 2284,
-					"height": 2823
-				},
-				"maskFrame": null,
-				"image": {
-					"path": "images/rightGreen.png",
-					"frame": {
-						"x": 1515,
-						"y": 307,
-						"width": 765,
-						"height": 1205
-					}
-				},
-				"imageType": "png",
-				"children": [
-					
-				],
-				"modification": "570990949"
-			},
-			{
-				"id": 301,
-				"name": "rightSide",
-				"layerFrame": {
-					"x": 0,
-					"y": 0,
-					"width": 2284,
-					"height": 2823
-				},
-				"maskFrame": null,
-				"image": {
-					"path": "images/rightSide.png",
-					"frame": {
-						"x": 1760,
-						"y": 327,
-						"width": 520,
-						"height": 1161
-					}
-				},
-				"imageType": "png",
-				"children": [
-					
-				],
-				"modification": "1626637150"
-			},
-			{
-				"id": 297,
-				"name": "leftSide",
-				"layerFrame": {
-					"x": 0,
-					"y": 0,
-					"width": 2284,
-					"height": 2823
-				},
-				"maskFrame": null,
-				"image": {
-					"path": "images/leftSide.png",
-					"frame": {
-						"x": 94,
-						"y": 333,
-						"width": 520,
-						"height": 1131
-					}
-				},
-				"imageType": "png",
-				"children": [
-					
-				],
-				"modification": "762353637"
 			},
 			{
 				"id": 24,
@@ -761,6 +761,6 @@
 				"modification": "316205619"
 			}
 		],
-		"modification": "348640800"
+		"modification": "378565947"
 	}
 ]
