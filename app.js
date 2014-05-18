@@ -80,7 +80,9 @@ PSD["leftButton"].animate({
 		properties: {
 			y: 405,
 			x: 860,
+			zindex: 100,
 			opacity: 1
+
 		},
 			curve: animateInCurve
 		
@@ -212,6 +214,7 @@ goHome = function(){
 			y: 1060,
 			x: 860,
 			scale: 1,
+			zindex: 100,
 			opacity: 0
 		},
 			curve: animateInCurve
@@ -381,7 +384,8 @@ PSD["leftButton"].on(pointerType, function() {
        PSD["leftButton"].animate({
 			properties: {
 			opacity: 0,
-			x: 1500
+			x: 1500,
+			zindex: 100,
 		},
 	curve: "spring(1000,100,800)"
 	});
@@ -412,6 +416,7 @@ PSD["leftsidetrigger"].animate({
  PSD["leftButton"].animate({
 			properties: {
 			opacity: 1,
+			zindex: 100,
 			x:860
 		},
 	curve: "spring(1200,100,800)"
