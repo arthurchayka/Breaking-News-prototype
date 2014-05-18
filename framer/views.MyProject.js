@@ -39,31 +39,6 @@
 				"modification": "1549087535"
 			},
 			{
-				"id": 56,
-				"name": "leftButton",
-				"layerFrame": {
-					"x": 0,
-					"y": 0,
-					"width": 2284,
-					"height": 2823
-				},
-				"maskFrame": null,
-				"image": {
-					"path": "images/leftButton.png",
-					"frame": {
-						"x": 859,
-						"y": 405,
-						"width": 59,
-						"height": 58
-					}
-				},
-				"imageType": "png",
-				"children": [
-					
-				],
-				"modification": "887643326"
-			},
-			{
 				"id": 357,
 				"name": "left cover",
 				"layerFrame": {
@@ -164,6 +139,31 @@
 				"modification": "1728049490"
 			},
 			{
+				"id": 56,
+				"name": "Buttonleft",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 2284,
+					"height": 2823
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/Buttonleft.png",
+					"frame": {
+						"x": 859,
+						"y": 405,
+						"width": 59,
+						"height": 58
+					}
+				},
+				"imageType": "png",
+				"children": [
+					
+				],
+				"modification": "880148090"
+			},
+			{
 				"id": 139,
 				"name": "rightButton",
 				"layerFrame": {
@@ -186,7 +186,7 @@
 				"children": [
 					
 				],
-				"modification": "1685281695"
+				"modification": "1364389894"
 			},
 			{
 				"id": 58,
@@ -776,6 +776,6 @@
 				"modification": "672861224"
 			}
 		],
-		"modification": "1084259952"
+		"modification": "2093512547"
 	}
 ]

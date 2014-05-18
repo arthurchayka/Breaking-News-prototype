@@ -76,7 +76,7 @@ gotoNow = function(){
 		
 	});
 
-PSD["leftButton"].animate({
+PSD["Buttonleft"].animate({
 		properties: {
 			y: 405,
 			x: 860,
@@ -209,7 +209,7 @@ goHome = function(){
 		curve: animateOutCurve
 	});
 
-	PSD["leftButton"].animate({
+	PSD["Buttonleft"].animate({
 		properties: {
 			y: 1060,
 			x: 860,
@@ -334,32 +334,13 @@ PSD["screentrigger"].on(pointerType, function(e) {
 	return movePage();
 }); 
 
-
-/*
-if(goHome()) {PSD["smallBreakingNews"].opacity = 0}
-	else if(gotoNow();){PSD["smallBreakingNews"].opacity = 1}
-toggleback = utils.toggle(goHome);
-PSD["breakingNewss"].on(pointerType, function(a) {
-	var moveback;
-	a.preventDefault();
-	moveback = toggleback();
-	return moveback();
-});
-
-*/
- 
-
-//leftside
-//D["leftsidetrigger"].x = 0
-
-//PSD["leftButton"].x = 860
    PSD["leftsidetrigger"].animate({
 		properties: {x:720, width: 1,
 			opacity: 0},
 		curve: animationCurve
 	})
 
-PSD["leftButton"].on(pointerType, function() {
+PSD["Buttonleft"].on(pointerType, function() {
    PSD["leftSide"].animate({
 		properties: {x:810},
 		curve: animationCurve
@@ -381,7 +362,7 @@ PSD["leftButton"].on(pointerType, function() {
 	curve: "spring(1000,100,800)"
 	});
 
-       PSD["leftButton"].animate({
+       PSD["Buttonleft"].animate({
 			properties: {
 			opacity: 0,
 			x: 1500,
@@ -413,7 +394,7 @@ PSD["leftsidetrigger"].animate({
 	curve: animateInCurve
 	});
 
- PSD["leftButton"].animate({
+ PSD["Buttonleft"].animate({
 			properties: {
 			opacity: 1,
 			zindex: 100,
@@ -521,71 +502,5 @@ PSD["smallBreakingNews"].animate({
 
 
 
-/*
-       PSD["leftButton"].animate({
-			properties: {
-			opacity: 0,
-			x: 1500
-		},
-	curve: "spring(1000,100,800)"
-	});
-});
-
-
-PSD["leftsidetrigger"].on(pointerType, function() {
-   PSD["leftSide"].animate({
-		properties: {x:100},
-		curve: animationCurve
-	})
-      PSD["leftsidetrigger"].animate({
-		properties: {x:150},
-		curve: animationCurve
-	})
-
- PSD["leftButton"].animate({
-			properties: {
-			opacity: 1,
-			x:860
-		},
-	curve: "spring(1200,100,800)"
-	});
-PSD["breakingNewss"].animate({
-			properties: {
-			opacity: 1,
-			x:980,
-			y:415
-					},
-
-	curve: "spring(1200,100,800)"
-	});
-}); */
-
 
 PSD["mockup"].style.overflow = "hidden";
-/*
-       if(goHome){
-      	PSD["breakingNewss"].animate({
-			properties: {
-			opacity: 0
-		},
-	});
-
-} else {
-PSD["breakingNewss"].animate({
-			properties: {
-			opacity: 1,
-			x:277,
-			y:415
-
-		},
-	curve: "spring(1200,100,800)"
-	});
-}
-
-
-Phone.on("click", function() {
-  Profile.animate({
-		properties: {x:-320},
-		curve: animationCurve
-	})
-}); */
