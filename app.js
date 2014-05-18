@@ -15,36 +15,26 @@ noBounceCurveSpeed = "250";
 
 start = function() {
 
-	// Make the logo appear
-	utils.delay(500, function() {
-		PSD["logo"].scale = .5
-		PSD["logo"].animate({
-			properties: {opacity:1, scale:1},
-			curve: "spring(1500,30,2000)"
-		})
-	})
-
 // Rotate the logo
 	utils.delay(1500 * 1, function() {
 		PSD["logo"].animate({
-			properties: {rotationX:360},
+			properties: {rotationZ:360},
 			curve: "spring(150,30,0)"
 		})
 	})
-	
-	// Rotate the logo again
-	utils.delay(1500 * 2, function() {
+		utils.delay(1500 * 2, function() {
 		PSD["logo"].animate({
 			properties: {rotationY:360},
 			curve: "spring(150,30,0)"
 		})
 	})
 	
-	// Rotate the logo again
 	utils.delay(1500 * 3, function() {
+		oldX = PSD["logo"].x
+		PSD["logo"].x -= 100
 		PSD["logo"].animate({
-			properties: {rotationZ:360},
-			curve: "spring(150,30,0)"
+			properties: {x:oldX},
+			curve: "spring(1200,9,700)"
 		})
 	})
 }
