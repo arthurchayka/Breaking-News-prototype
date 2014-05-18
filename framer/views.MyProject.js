@@ -14,6 +14,31 @@
 		"imageType": null,
 		"children": [
 			{
+				"id": 398,
+				"name": "screentrigger",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 2284,
+					"height": 2823
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/screentrigger.png",
+					"frame": {
+						"x": 845,
+						"y": 588,
+						"width": 606,
+						"height": 867
+					}
+				},
+				"imageType": "png",
+				"children": [
+					
+				],
+				"modification": "1549087535"
+			},
+			{
 				"id": 357,
 				"name": "left cover",
 				"layerFrame": {
@@ -26,17 +51,17 @@
 				"image": {
 					"path": "images/left cover.png",
 					"frame": {
-						"x": 607,
-						"y": 111,
-						"width": 226,
-						"height": 1584
+						"x": 542,
+						"y": 318,
+						"width": 279,
+						"height": 375
 					}
 				},
 				"imageType": "png",
 				"children": [
 					
 				],
-				"modification": "477066332"
+				"modification": "1641601664"
 			},
 			{
 				"id": 354,
@@ -51,77 +76,167 @@
 				"image": {
 					"path": "images/right cover.png",
 					"frame": {
-						"x": 1453,
-						"y": 111,
-						"width": 306,
-						"height": 1584
+						"x": 1463,
+						"y": 307,
+						"width": 324,
+						"height": 367
 					}
 				},
 				"imageType": "png",
 				"children": [
 					
 				],
-				"modification": "1926482971"
+				"modification": "1885201978"
 			},
 			{
 				"id": 322,
 				"name": "leftsidetrigger",
 				"layerFrame": {
-					"x": 830,
-					"y": 326,
-					"width": 633,
-					"height": 1138
+					"x": 0,
+					"y": 0,
+					"width": 2284,
+					"height": 2823
 				},
-				"maskFrame": {
-					"x": 830,
-					"y": 327,
-					"width": 633,
-					"height": 1137
-				},
+				"maskFrame": null,
 				"image": {
 					"path": "images/leftsidetrigger.png",
 					"frame": {
-						"x": 0,
-						"y": 0,
-						"width": 2284,
-						"height": 2823
+						"x": 614,
+						"y": 330,
+						"width": 157,
+						"height": 1134
 					}
 				},
 				"imageType": "png",
 				"children": [
 					
 				],
-				"modification": "2005696475"
+				"modification": "245245875"
 			},
 			{
 				"id": 325,
 				"name": "rightsidetrigger",
 				"layerFrame": {
-					"x": 830,
-					"y": 326,
-					"width": 633,
-					"height": 1138
+					"x": 0,
+					"y": 0,
+					"width": 2284,
+					"height": 2823
 				},
-				"maskFrame": {
-					"x": 830,
-					"y": 327,
-					"width": 633,
-					"height": 1137
-				},
+				"maskFrame": null,
 				"image": {
 					"path": "images/rightsidetrigger.png",
 					"frame": {
-						"x": 0,
-						"y": 0,
-						"width": 2284,
-						"height": 2823
+						"x": 1515,
+						"y": 327,
+						"width": 109,
+						"height": 1143
 					}
 				},
 				"imageType": "png",
 				"children": [
 					
 				],
-				"modification": "1780686480"
+				"modification": "1728049490"
+			},
+			{
+				"id": 56,
+				"name": "leftButton",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 2284,
+					"height": 2823
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/leftButton.png",
+					"frame": {
+						"x": 859,
+						"y": 405,
+						"width": 59,
+						"height": 58
+					}
+				},
+				"imageType": "png",
+				"children": [
+					
+				],
+				"modification": "887643326"
+			},
+			{
+				"id": 139,
+				"name": "rightButton",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 2284,
+					"height": 2823
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/rightButton.png",
+					"frame": {
+						"x": 1370,
+						"y": 405,
+						"width": 59,
+						"height": 58
+					}
+				},
+				"imageType": "png",
+				"children": [
+					
+				],
+				"modification": "1685281695"
+			},
+			{
+				"id": 58,
+				"name": "statusBar",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 2284,
+					"height": 2823
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/statusBar.png",
+					"frame": {
+						"x": 826,
+						"y": 335,
+						"width": 635,
+						"height": 45
+					}
+				},
+				"imageType": "png",
+				"children": [
+					
+				],
+				"modification": "568879286"
+			},
+			{
+				"id": 395,
+				"name": "reflection",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 2284,
+					"height": 2823
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/reflection.png",
+					"frame": {
+						"x": 824,
+						"y": 334,
+						"width": 638,
+						"height": 1128
+					}
+				},
+				"imageType": "png",
+				"children": [
+					
+				],
+				"modification": "208648217"
 			},
 			{
 				"id": 331,
@@ -146,232 +261,7 @@
 				"children": [
 					
 				],
-				"modification": "1117763166"
-			},
-			{
-				"id": 58,
-				"name": "statusBar",
-				"layerFrame": {
-					"x": 0,
-					"y": 0,
-					"width": 2284,
-					"height": 2823
-				},
-				"maskFrame": null,
-				"image": {
-					"path": "images/statusBar.png",
-					"frame": {
-						"x": 835,
-						"y": 343,
-						"width": 616,
-						"height": 27
-					}
-				},
-				"imageType": "png",
-				"children": [
-					
-				],
-				"modification": "1218540147"
-			},
-			{
-				"id": 139,
-				"name": "rightButton",
-				"layerFrame": {
-					"x": 0,
-					"y": 0,
-					"width": 2284,
-					"height": 2823
-				},
-				"maskFrame": null,
-				"image": {
-					"path": "images/rightButton.png",
-					"frame": {
-						"x": 1369,
-						"y": 404,
-						"width": 60,
-						"height": 60
-					}
-				},
-				"imageType": "png",
-				"children": [
-					
-				],
-				"modification": "1218540091"
-			},
-			{
-				"id": 56,
-				"name": "leftButton",
-				"layerFrame": {
-					"x": 0,
-					"y": 0,
-					"width": 2284,
-					"height": 2823
-				},
-				"maskFrame": null,
-				"image": {
-					"path": "images/leftButton.png",
-					"frame": {
-						"x": 858,
-						"y": 404,
-						"width": 60,
-						"height": 60
-					}
-				},
-				"imageType": "png",
-				"children": [
-					
-				],
-				"modification": "1218540119"
-			},
-			{
-				"id": 313,
-				"name": "rightGreen",
-				"layerFrame": {
-					"x": 0,
-					"y": 0,
-					"width": 2284,
-					"height": 2823
-				},
-				"maskFrame": null,
-				"image": {
-					"path": "images/rightGreen.png",
-					"frame": {
-						"x": 1515,
-						"y": 307,
-						"width": 765,
-						"height": 1205
-					}
-				},
-				"imageType": "png",
-				"children": [
-					
-				],
-				"modification": "570990949"
-			},
-			{
-				"id": 301,
-				"name": "rightSide",
-				"layerFrame": {
-					"x": 0,
-					"y": 0,
-					"width": 2284,
-					"height": 2823
-				},
-				"maskFrame": null,
-				"image": {
-					"path": "images/rightSide.png",
-					"frame": {
-						"x": 1760,
-						"y": 335,
-						"width": 520,
-						"height": 1127
-					}
-				},
-				"imageType": "png",
-				"children": [
-					
-				],
-				"modification": "2071957238"
-			},
-			{
-				"id": 361,
-				"name": "leftGreen",
-				"layerFrame": {
-					"x": 0,
-					"y": 0,
-					"width": 2284,
-					"height": 2823
-				},
-				"maskFrame": null,
-				"image": {
-					"path": "images/leftGreen.png",
-					"frame": {
-						"x": 60,
-						"y": 198,
-						"width": 711,
-						"height": 1291
-					}
-				},
-				"imageType": "png",
-				"children": [
-					
-				],
-				"modification": "984214917"
-			},
-			{
-				"id": 297,
-				"name": "leftSide",
-				"layerFrame": {
-					"x": 0,
-					"y": 0,
-					"width": 2284,
-					"height": 2823
-				},
-				"maskFrame": null,
-				"image": {
-					"path": "images/leftSide.png",
-					"frame": {
-						"x": 94,
-						"y": 335,
-						"width": 520,
-						"height": 1127
-					}
-				},
-				"imageType": "png",
-				"children": [
-					
-				],
-				"modification": "387083451"
-			},
-			{
-				"id": 318,
-				"name": "reflect",
-				"layerFrame": {
-					"x": 0,
-					"y": 0,
-					"width": 2284,
-					"height": 2823
-				},
-				"maskFrame": null,
-				"image": {
-					"path": "images/reflect.png",
-					"frame": {
-						"x": 824,
-						"y": 335,
-						"width": 640,
-						"height": 1129
-					}
-				},
-				"imageType": "png",
-				"children": [
-					
-				],
-				"modification": "1234747368"
-			},
-			{
-				"id": 156,
-				"name": "mockup",
-				"layerFrame": {
-					"x": 0,
-					"y": 0,
-					"width": 2284,
-					"height": 2823
-				},
-				"maskFrame": null,
-				"image": {
-					"path": "images/mockup.png",
-					"frame": {
-						"x": 771,
-						"y": 111,
-						"width": 744,
-						"height": 1572
-					}
-				},
-				"imageType": "png",
-				"children": [
-					
-				],
-				"modification": "1218540023"
+				"modification": "1465283023"
 			},
 			{
 				"id": 24,
@@ -396,11 +286,11 @@
 				"children": [
 					
 				],
-				"modification": "316205625"
+				"modification": "1017119662"
 			},
 			{
-				"id": 142,
-				"name": "welcome",
+				"id": 156,
+				"name": "mockup",
 				"layerFrame": {
 					"x": 0,
 					"y": 0,
@@ -409,19 +299,119 @@
 				},
 				"maskFrame": null,
 				"image": {
-					"path": "images/welcome.png",
+					"path": "images/mockup.png",
 					"frame": {
-						"x": 1038,
-						"y": 802,
-						"width": 210,
-						"height": 25
+						"x": 771,
+						"y": 111,
+						"width": 744,
+						"height": 1572
 					}
 				},
 				"imageType": "png",
 				"children": [
 					
 				],
-				"modification": "1218361499"
+				"modification": "1017119657"
+			},
+			{
+				"id": 361,
+				"name": "leftGreen",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 2284,
+					"height": 2823
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/leftGreen.png",
+					"frame": {
+						"x": 60,
+						"y": 283,
+						"width": 711,
+						"height": 1340
+					}
+				},
+				"imageType": "png",
+				"children": [
+					
+				],
+				"modification": "618828270"
+			},
+			{
+				"id": 313,
+				"name": "rightGreen",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 2284,
+					"height": 2823
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/rightGreen.png",
+					"frame": {
+						"x": 1515,
+						"y": 307,
+						"width": 765,
+						"height": 1205
+					}
+				},
+				"imageType": "png",
+				"children": [
+					
+				],
+				"modification": "1249680048"
+			},
+			{
+				"id": 301,
+				"name": "rightSide",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 2284,
+					"height": 2823
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/rightSide.png",
+					"frame": {
+						"x": 1733,
+						"y": 320,
+						"width": 542,
+						"height": 1180
+					}
+				},
+				"imageType": "png",
+				"children": [
+					
+				],
+				"modification": "1677014759"
+			},
+			{
+				"id": 297,
+				"name": "leftSide",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 2284,
+					"height": 2823
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/leftSide.png",
+					"frame": {
+						"x": 90,
+						"y": 345,
+						"width": 542,
+						"height": 1153
+					}
+				},
+				"imageType": "png",
+				"children": [
+					
+				],
+				"modification": "297222758"
 			},
 			{
 				"id": 144,
@@ -446,7 +436,32 @@
 				"children": [
 					
 				],
-				"modification": "1218361493"
+				"modification": "1465938463"
+			},
+			{
+				"id": 142,
+				"name": "welcome",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 2284,
+					"height": 2823
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/welcome.png",
+					"frame": {
+						"x": 1038,
+						"y": 802,
+						"width": 210,
+						"height": 25
+					}
+				},
+				"imageType": "png",
+				"children": [
+					
+				],
+				"modification": "1017119663"
 			},
 			{
 				"id": 146,
@@ -471,7 +486,7 @@
 				"children": [
 					
 				],
-				"modification": "1218361465"
+				"modification": "1880503757"
 			},
 			{
 				"id": 148,
@@ -496,7 +511,7 @@
 				"children": [
 					
 				],
-				"modification": "1218361438"
+				"modification": "1465968006"
 			},
 			{
 				"id": 271,
@@ -521,7 +536,7 @@
 				"children": [
 					
 				],
-				"modification": "1218361432"
+				"modification": "360861838"
 			},
 			{
 				"id": 13,
@@ -577,7 +592,7 @@
 								"children": [
 									
 								],
-								"modification": "1218361401"
+								"modification": "1465968094"
 							},
 							{
 								"id": 263,
@@ -602,7 +617,7 @@
 								"children": [
 									
 								],
-								"modification": "1218361373"
+								"modification": "1465968126"
 							},
 							{
 								"id": 261,
@@ -627,7 +642,7 @@
 								"children": [
 									
 								],
-								"modification": "1218361345"
+								"modification": "1465968156"
 							},
 							{
 								"id": 259,
@@ -652,7 +667,7 @@
 								"children": [
 									
 								],
-								"modification": "1218361338"
+								"modification": "1465968187"
 							},
 							{
 								"id": 257,
@@ -677,7 +692,7 @@
 								"children": [
 									
 								],
-								"modification": "1218361311"
+								"modification": "1465968220"
 							},
 							{
 								"id": 267,
@@ -702,13 +717,13 @@
 								"children": [
 									
 								],
-								"modification": "1218361283"
+								"modification": "1465968250"
 							}
 						],
-						"modification": "2137375260"
+						"modification": "1260218877"
 					}
 				],
-				"modification": "207831641"
+				"modification": "1679078342"
 			},
 			{
 				"id": 189,
@@ -733,7 +748,7 @@
 				"children": [
 					
 				],
-				"modification": "1218361251"
+				"modification": "1465997789"
 			},
 			{
 				"id": 183,
@@ -758,9 +773,9 @@
 				"children": [
 					
 				],
-				"modification": "316205619"
+				"modification": "672861224"
 			}
 		],
-		"modification": "378565947"
+		"modification": "1732103792"
 	}
 ]

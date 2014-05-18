@@ -13,55 +13,84 @@ noBounceCurveSpeed = "250";
 
 
 
-PSD.logo.opacity = 0
-
 start = function() {
 
-		PSD.logo.animate({
-		properties: {opacity:1},
-		time: 1000
-	})
-
-	utils.delay(1000, function() {
-		PSD.logo.scale = .5
-		PSD.logo.animate({
+	// Make the logo appear
+	utils.delay(500, function() {
+		PSD["logo"].scale = .5
+		PSD["logo"].animate({
 			properties: {opacity:1, scale:1},
 			curve: "spring(1500,30,2000)"
+		})
 	})
-})
 
-	// Rotate the logo
-	utils.delay(2000, function() {
-		PSD.logo.animate({
-			properties: {rotationY:720},
-			curve: "spring(100,30,0)"
+// Rotate the logo
+	utils.delay(1500 * 1, function() {
+		PSD["logo"].animate({
+			properties: {rotationX:360},
+			curve: "spring(150,30,0)"
+		})
 	})
-})
-	// Shake the logo
-	utils.delay(3000, function() {
-		oldX = PSD["logo"].x
-		PSD.logo.x -= 100
-		PSD.logo.animate({
-			properties: {x:oldX},
-			curve: "spring(600,6,500)"
+	
+	// Rotate the logo again
+	utils.delay(1500 * 2, function() {
+		PSD["logo"].animate({
+			properties: {rotationY:360},
+			curve: "spring(150,30,0)"
+		})
 	})
-})
-};
+	
+	// Rotate the logo again
+	utils.delay(1500 * 3, function() {
+		PSD["logo"].animate({
+			properties: {rotationZ:360},
+			curve: "spring(150,30,0)"
+		})
+	})
+}
 
-utils.delay(500, start)
+utils.delay(100, start)
 
-
-
-PSD["smallBreakingNews"].opacity = 0
 
 // Animate to Now View
-gotoNow = function() {
-	
+gotoNow = function(){
+
+	PSD["screentrigger"].animate({
+		properties: {
+			x: 980,
+			y: 400,
+			width: 330,
+			height: 70,
+			opacity: 0
+			},
+	curve: animateInCurve
+	});
+
 	PSD["breakingNews"].animate({
 		properties: {
 			y: 405,
 			scale: 0.7,
 			opacity: 0
+		},
+			curve: animateInCurve
+		
+	});
+
+PSD["leftButton"].animate({
+		properties: {
+			y: 405,
+			x: 860,
+			opacity: 1
+		},
+			curve: animateInCurve
+		
+	});
+
+PSD["rightButton"].animate({
+		properties: {
+			y: 405,
+			x: 1370,
+			opacity: 1
 		},
 			curve: animateInCurve
 		
@@ -117,6 +146,8 @@ PSD["button"].animate({
 	curve: animateInCurve
 	});
 
+
+
 PSD["todayback"].animate({
 		properties: {
 			y: -900,
@@ -152,11 +183,21 @@ PSD["putin"].animate({
 		},
 		curve: animateInCurve
 	});
-
+return false
 };
 
-goHome = function() {
-		
+goHome = function(){
+			PSD["screentrigger"].animate({
+		properties: {
+			x: 830,
+			y: 620,
+			width: 620,
+			height: 840,
+			opacity: 0
+			},
+	curve: animateInCurve
+	});
+
 	PSD["breakingNews"].animate({
 		properties: {
 			y: 860,
@@ -166,6 +207,25 @@ goHome = function() {
 		curve: animateOutCurve
 	});
 
+	PSD["leftButton"].animate({
+		properties: {
+			y: 1060,
+			x: 860,
+			scale: 1,
+			opacity: 0
+		},
+			curve: animateInCurve
+			});
+
+	PSD["rightButton"].animate({
+		properties: {
+			y: 1060,
+			x: 1370,
+			scale: 1,
+			opacity: 0
+		},
+			curve: animateInCurve
+	});
 	PSD["smallBreakingNews"].animate({
 		properties: {
 			y: 815,
@@ -247,6 +307,7 @@ PSD["putin"].animate({
 		},
 		curve: animateInCurve
 	});
+return true;
 };
 
 
@@ -258,19 +319,22 @@ PSD["CONTENT"].onclick = function(){
 };
 
 */
-goHome();
+goHome();  
 
 pointerType = "click";
 toggler = utils.toggle(gotoNow, goHome);
-PSD["reflect"].on(pointerType, function(e) {
+
+PSD["screentrigger"].on(pointerType, function(e) {
 	var movePage;
 	e.preventDefault();
 	movePage = toggler();
 	return movePage();
-});
+}); 
+
 
 /*
-
+if(goHome()) {PSD["smallBreakingNews"].opacity = 0}
+	else if(gotoNow();){PSD["smallBreakingNews"].opacity = 1}
 toggleback = utils.toggle(goHome);
 PSD["breakingNewss"].on(pointerType, function(a) {
 	var moveback;
@@ -280,21 +344,32 @@ PSD["breakingNewss"].on(pointerType, function(a) {
 });
 
 */
+ 
 
 //leftside
-PSD["leftsidetrigger"].x = 0
+//D["leftsidetrigger"].x = 0
 
-PSD["leftButton"].x = 860
+//PSD["leftButton"].x = 860
+   PSD["leftsidetrigger"].animate({
+		properties: {x:720, width: 1,
+			opacity: 0},
+		curve: animationCurve
+	})
 
 PSD["leftButton"].on(pointerType, function() {
    PSD["leftSide"].animate({
-		properties: {x:760},
+		properties: {x:810},
 		curve: animationCurve
 	})
    PSD["leftsidetrigger"].animate({
-		properties: {x:1270},
+		properties: {x:1338, width: 122, opacity: 0},
 		curve: animationCurve
 	})
+   PSD["screentrigger"].animate({
+		properties: {width: 0, opacity: 0},
+		curve: animationCurve
+	})
+
         PSD["smallBreakingNews"].animate({
 			properties: {
 			opacity: 0,
@@ -318,10 +393,21 @@ PSD["leftsidetrigger"].on(pointerType, function() {
 		properties: {x:100},
 		curve: animationCurve
 	})
-      PSD["leftsidetrigger"].animate({
-		properties: {x:150},
-		curve: animationCurve
+PSD["leftsidetrigger"].animate({
+	properties: {x:150, width: 1, opacity: 0},
+	curve: animationCurve
 	})
+
+	PSD["screentrigger"].animate({
+		properties: {
+			x: 980,
+			y: 400,
+			width: 330,
+			height: 70,
+			opacity: 0
+			},
+	curve: animateInCurve
+	});
 
  PSD["leftButton"].animate({
 			properties: {
@@ -342,31 +428,38 @@ PSD["smallBreakingNews"].animate({
 
 //rightside
 
-PSD["rightButton"].x = 1370 
+//PSD["rightButton"].x = 1370 
 
    PSD["rightsidetrigger"].animate({
-		properties: {x:1500},
+		properties: {x:1520, width: 1,
+			opacity: 0},
 		curve: animationCurve
 	})
+
 
 PSD["rightButton"].on(pointerType, function() {
    PSD["rightSide"].animate({
-		properties: {x:1020},
+		properties: {x:927},
 		opacity: 0,
 		curve: animationCurve
 	})
+      PSD["screentrigger"].animate({
+		properties: {width: 0, opacity: 0},
+		curve: animationCurve
+	})
    PSD["rightsidetrigger"].animate({
-		properties: {x:800},
+		properties: {x:825, width: 115,},
 		opacity: 0,
 		curve: animationCurve
 	})
         PSD["smallBreakingNews"].animate({
 			properties: {
 			opacity: 0,
-			x: 650
+			x: 550
 			},
-	curve: "spring(1000,100,800)"
+				curve: "spring(1000,100,800)"
 	});
+
         PSD["rightButton"].animate({
 			properties: {
 			opacity: 0,
@@ -378,13 +471,25 @@ PSD["rightButton"].on(pointerType, function() {
 
 //going back 
 
-PSD["rightsidetrigger"].on(pointerType, function() {
+PSD["rightsidetrigger"].on(pointerType, function(a) {
    PSD["rightSide"].animate({
 		properties: {x:1500},
 		curve: animationCurve
 	})
-      PSD["rightsidetrigger"].animate({
-		properties: {x:1500},
+
+   	PSD["screentrigger"].animate({
+		properties: {
+			x: 980,
+			y: 400,
+			width: 330,
+			height: 70,
+			opacity: 0
+			},
+	curve: animateInCurve
+	});
+   PSD["rightsidetrigger"].animate({
+		properties: {x:1520, width: 1,
+			opacity: 0},
 		curve: animationCurve
 	})
 
@@ -395,6 +500,7 @@ PSD["rightsidetrigger"].on(pointerType, function() {
 		},
 	curve: "spring(1200,100,800)"
 	});
+
 PSD["smallBreakingNews"].animate({
 			properties: {
 			opacity: 1,
@@ -403,7 +509,12 @@ PSD["smallBreakingNews"].animate({
 					},
 	curve: "spring(1200,100,800)"
 	});
+
 });
+
+
+
+
 
 /*
        PSD["leftButton"].animate({
