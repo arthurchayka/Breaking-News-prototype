@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Signika:300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 		<meta charset="utf-8">
 		
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -17,6 +21,39 @@
 		
 		<style type="text/css" media="screen">
 		
+			name{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 48px;
+	font-color: #000000;
+	z-index: 100;
+	position:absolute;
+	left:450px;
+	top:250px;
+	z-index:5;
+	}
+
+				bodytext{
+	font-family: 'Signika', sans-serif;
+	font-size: 23px;
+	color: #60625f;
+	z-index: 100;
+	position:absolute;
+	left:450px;
+	top:300px;
+	z-index:5;
+	}
+
+					bodytext2{
+	font-family: 'Signika', sans-serif;
+	font-size: 23px;
+	color: #bbb8ac;
+	z-index: 100;
+	position:absolute;
+	left:450px;
+	top:330px;
+	z-index:5;
+	}
+
 		* {
 			margin:0;
 			padding:0;
@@ -25,9 +62,8 @@
 		}
 
 		body {
-			background-color: white;
+			background-color: #f9f9f9;
 			font: 28px/1em "Helvetica";
-			color: #FFF;
 			-webkit-tap-highlight-color: rgba(0,0,0,0);
 			-webkit-perspective: 1000px;
 		}
@@ -41,6 +77,9 @@
 		
 	</head>
 	<body>
+		<name>My modest app prototype</name>
+		<bodytext>Try to grab your paper and check out News Sections and Settings</bodytext>
+		<bodytext2> (Just a few clicks, I know, I`m still working on it)</bodytext2>
 		<script src="framer/views.MyProject.js"></script>
 		<script src="framer/framer.js"></script>
 		<script src="framer/framerps.js"></script>

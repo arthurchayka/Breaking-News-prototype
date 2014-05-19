@@ -1,11 +1,12 @@
 {"docName":"MyProject","path":"~/Desktop/MyProject","relativeImagePath":"images","imagePath":"~/Desktop/MyProject/images","framerPath":"~/Desktop/MyProject/framer","viewInfoPath":"~/Desktop/MyProject/framer/views.MyProject.js","logPaths":["/tmp/framerps.log","~/Desktop/MyProject/framer/framerps.log"]}
 
 Running for ~/Desktop/MyProject
-Buttonleft: Exporting image
-PROGRESS: 21.875
+CONTENT: Exporting image
+mockup: Exporting image
+PROGRESS: 41.9354838709677
 newssScroll: Calculating vector mask bounds
-PROGRESS: 75
-PROGRESS: 81.25
+PROGRESS: 74.1935483870968
+PROGRESS: 80.6451612903226
 3 views changed
 Skipping ~/Desktop/MyProject/index.html (exists)
 Skipping ~/Desktop/MyProject/app.js (exists)

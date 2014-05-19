@@ -10,8 +10,16 @@
 			"height": 2823
 		},
 		"maskFrame": null,
-		"image": null,
-		"imageType": null,
+		"image": {
+			"path": "images/CONTENT.png",
+			"frame": {
+				"x": 0,
+				"y": 0,
+				"width": 2284,
+				"height": 2823
+			}
+		},
+		"imageType": "png",
 		"children": [
 			{
 				"id": 398,
@@ -51,17 +59,17 @@
 				"image": {
 					"path": "images/left cover.png",
 					"frame": {
-						"x": 542,
-						"y": 318,
-						"width": 279,
-						"height": 375
+						"x": 180,
+						"y": 52,
+						"width": 640,
+						"height": 1621
 					}
 				},
 				"imageType": "png",
 				"children": [
 					
 				],
-				"modification": "1641601664"
+				"modification": "838953261"
 			},
 			{
 				"id": 354,
@@ -76,17 +84,17 @@
 				"image": {
 					"path": "images/right cover.png",
 					"frame": {
-						"x": 1463,
-						"y": 307,
-						"width": 324,
-						"height": 367
+						"x": 1461,
+						"y": 4,
+						"width": 741,
+						"height": 1740
 					}
 				},
 				"imageType": "png",
 				"children": [
 					
 				],
-				"modification": "1885201978"
+				"modification": "759737498"
 			},
 			{
 				"id": 322,
@@ -301,17 +309,17 @@
 				"image": {
 					"path": "images/mockup.png",
 					"frame": {
-						"x": 771,
-						"y": 111,
+						"x": 769,
+						"y": 106,
 						"width": 744,
-						"height": 1572
+						"height": 1577
 					}
 				},
 				"imageType": "png",
 				"children": [
 					
 				],
-				"modification": "1017119657"
+				"modification": "835920883"
 			},
 			{
 				"id": 361,
@@ -336,7 +344,7 @@
 				"children": [
 					
 				],
-				"modification": "618828270"
+				"modification": "319244220"
 			},
 			{
 				"id": 313,
@@ -361,7 +369,7 @@
 				"children": [
 					
 				],
-				"modification": "1249680048"
+				"modification": "210230307"
 			},
 			{
 				"id": 301,
@@ -512,31 +520,6 @@
 					
 				],
 				"modification": "1465968006"
-			},
-			{
-				"id": 271,
-				"name": "Group 1",
-				"layerFrame": {
-					"x": 0,
-					"y": 0,
-					"width": 2284,
-					"height": 2823
-				},
-				"maskFrame": null,
-				"image": {
-					"path": "images/Group 1.png",
-					"frame": {
-						"x": 687,
-						"y": 1633,
-						"width": 969,
-						"height": 168
-					}
-				},
-				"imageType": "png",
-				"children": [
-					
-				],
-				"modification": "360861838"
 			},
 			{
 				"id": 13,
@@ -773,9 +756,9 @@
 				"children": [
 					
 				],
-				"modification": "672861224"
+				"modification": "1411408510"
 			}
 		],
-		"modification": "2093512547"
+		"modification": "650998127"
 	}
 ]

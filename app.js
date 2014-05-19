@@ -2,44 +2,92 @@
 animateInCurve = "spring(450,30,150)";
 animateOutCurve = "spring(350,22,100)";
 animationCurve = "spring(600,40,500)";
-noBounceCurve = "ease-out"
+easyinout = "spring(500,35,10)";
+noBounceCurve = "ease-out";
 noBounceCurveSpeed = "250";
 
 
 	//Size
-	PSD["CONTENT"].scale = 0.4
-	PSD["CONTENT"].x = -700
-	PSD["CONTENT"].y = -570
+	PSD["CONTENT"].scale = 0.5
+	PSD["CONTENT"].x = -920
+	PSD["CONTENT"].y = -730
 
 
 
 start = function() {
+PSD["breakingNews"].opacity = 0
+PSD["welcome"].opacity = 0
+PSD["description"].opacity = 0
+PSD["button"].opacity = 0
+
+PSD["logo"].opacity = 0
 
 // Rotate the logo
-	utils.delay(1500 * 1, function() {
+// Make the logo appear
+	utils.delay(3000, function() {
+		PSD["logo"].scale = .5
 		PSD["logo"].animate({
-			properties: {rotationZ:360},
-			curve: "spring(150,30,0)"
+			properties: {opacity:1, scale:1},
+			curve: "spring(1500,30,2000)"
 		})
 	})
-		utils.delay(1500 * 2, function() {
+
+
+// Rotate the logo
+	utils.delay(3500*1, function() {
 		PSD["logo"].animate({
 			properties: {rotationY:360},
 			curve: "spring(150,30,0)"
 		})
 	})
-	
-	utils.delay(1500 * 3, function() {
+
+	// Rotate the logo
+	utils.delay(4500*1, function() {
+		PSD["logo"].animate({
+			properties: {rotationX:360},
+			curve: "spring(150,30,0)"
+		})
+	})
+
+	// Shake the logo
+	utils.delay(5000*1, function() {
 		oldX = PSD["logo"].x
 		PSD["logo"].x -= 100
 		PSD["logo"].animate({
 			properties: {x:oldX},
-			curve: "spring(1200,9,700)"
+			curve: "spring(1200,6,500)"
+		})
+		PSD["breakingNews"].scale = .5
+		PSD["breakingNews"].animate({
+			properties: {opacity:1, scale:1},
+			curve: "ease-in",
+			time: 100
+		})
+		PSD["description"].scale = .5
+		PSD["description"].animate({
+			properties: {opacity:1, scale:1},
+			curve: "ease-in",
+			time: 100
+		})
+		PSD["welcome"].scale = .5
+		PSD["welcome"].animate({
+			properties: {opacity:1, scale:1},
+			curve: "ease-in",
+			time: 100
+		})
+
+		PSD["button"].scale = .5
+		PSD["button"].animate({
+			properties: {opacity:1, scale:1},
+			curve: "ease-in",
+			time: 100
 		})
 	})
+
+
 }
 
-utils.delay(100, start)
+utils.delay(0, start)
 
 
 // Animate to Now View
@@ -312,6 +360,7 @@ PSD["CONTENT"].onclick = function(){
 };
 
 */
+
 goHome();  
 
 pointerType = "click";
@@ -323,6 +372,13 @@ PSD["screentrigger"].on(pointerType, function(e) {
 	movePage = toggler();
 	return movePage();
 }); 
+
+
+
+
+
+
+
 
    PSD["leftsidetrigger"].animate({
 		properties: {x:720, width: 1,
