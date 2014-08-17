@@ -8,9 +8,9 @@ var noBounceCurveSpeed = "250";
 	
 
 //Size
-PSD.CONTENT.scale = 0.5;
-PSD.CONTENT.x = -920;
-PSD.CONTENT.y = -730; 
+PSD.CONTENT.scale = 0.45;
+PSD.CONTENT.x = -978;
+PSD.CONTENT.y = -830; 
 
 
 // Animate to Now View
